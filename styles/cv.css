@@ -1,0 +1,278 @@
+body{
+    background-color: #fdbeed;
+    height: 100vh;
+     flex-basis: 100%; 
+     overflow: auto;
+     font-family: fantasy;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+     overflow-y: auto;
+}
+
+.super-contain{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.super-contain > .header{
+    display: flex;
+    height: 20%;
+    color:#5b5bfd;
+    margin-top:0px;
+}
+.span{
+    color: #fc73b7;
+}
+
+.super-contain > header{
+    width: 26%;
+    font-size: 26px;
+    margin-left: 70px;
+   }
+
+header>h1{
+  text-align: center;
+  font-size: 50px;
+  width: 100px;
+  margin-left: 135px;
+  margin-right: 90px;
+}
+
+.nav{
+    display: flex;
+    width: 54%;
+    justify-content: center;
+}
+
+.listado{
+    display: flex;
+    align-items: flex-end;
+    margin: 70px;
+    list-style:none;
+    
+}
+
+.nav a{
+    text-decoration: none;
+    margin: 2rem;
+    font-family: fantasy;
+    margin-left:3rem ;
+    color: black;
+}
+.nav a:hover{
+    border-bottom:1px  solid black;
+}
+.login{
+    
+    width: 20%;
+    margin-top: 48px;
+    color: black;
+    margin-right: 20px;
+    margin-left: 70px;
+    font-family:fantasy ;
+}
+.titulo-login{
+    margin-bottom: 10px;
+    display:inline;
+}
+.login > a{
+    
+    text-decoration: none;
+    border-radius:50px ;
+    border:1px solid black ;
+    width: 60px;
+    padding: .3rem;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.login > a:hover{
+    
+  
+    border-radius:60px ;
+    border:1px solid black ;
+    padding: .4rem;
+    background-color: purple;
+    color: white;
+    
+}
+.super-contain > .cuerpo{
+    display: flex;
+    height: 70% ;
+    margin-top: 0px;
+    width: 90%;
+    
+    margin-left: auto;
+}
+
+.texto{
+    height: 100%;
+    width: 40%;
+    
+   
+}
+
+.texto > article{
+    width: 70%;
+    height: 70%;
+    margin-top: 110px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: cursive;
+    
+}
+
+.texto> article > h1{
+    text-align: center;
+    color: #eb80b5;
+   
+}
+.texto> article > p{
+    margin-top: 80px;
+    font-size: 1.1rem; 
+    color: #ec7fb6;
+}
+
+.span1{
+    color: #7474fc;
+}
+.container{ 
+    height: 100%;
+    width: 55%;
+    margin: auto;
+}
+
+.container > ul > li> img{
+width: 70%;
+object-fit: cover; 
+}
+
+.container ul li{
+    padding: 0;
+    list-style: none;
+}
+
+.container ul.slider{
+    position: relative;
+}
+.container ul.slider li{
+    position: absolute;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition:opacity .5s ;
+}
+
+.container ul.slider li img{
+object-fit: cover;
+width: 80%;
+height:70%;
+}
+.container ul.slider li:first-child{
+    opacity: 1;
+}
+.container ul.slider li:target{
+    opacity: 1;
+}
+.container ul.slider li img{
+    border-radius: 100%;
+    width: 420px;
+    margin-top: 30px;
+}
+.container ul.slider li h1{
+   font-size: 30px;
+   font-family: cursive;
+   color: #6d239e;
+}
+
+
+
+
+
+
+
+/* Botones del slider */
+   .a{
+       margin-top: 430px;
+       display: flex;
+       position: absolute;
+       flex-direction: row;
+       width:100%;
+       height: 20px;
+       padding: 1px;
+       justify-content: center;
+       list-style: none;
+      
+       margin-left: 132px;
+       
+   }
+   .a > li > a{
+
+       margin-right: 70px;
+       background-color: #8641e1;
+       text-decoration: none;
+       border-radius: 50%;
+       color: #8641e1;
+       font-size: 15px;
+       cursor: pointer;
+       
+   }
+   #span{
+      animation-name: span;
+      position: relative; 
+      animation-duration: 3s;
+      animation-delay: 0s;
+  
+    }
+    
+    @keyframes span {
+        0%{bottom:200px;}
+        50%{bottom: 0px;}
+        100%{bottom: 0px;}
+    }
+
+    #span2{
+        animation-name: span;
+        position: relative; 
+        animation-duration: 5s;
+        animation-delay: 0s;
+    
+      }
+      
+      @keyframes span2 {
+          0%{bottom: 1;}
+          50%{bottom: 10px;}
+          100%{bottom: 0px;}
+      }
+      
+    .contain-team{
+        height: 100%;
+        display: flex;
+        flex-basis: 100%;
+        background-color: violet;
+        margin-top: 28px;
+    }  
+    
+/*go-top*/
+
+.go-down-contain{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+}
+ .go-top-botton{
+    width: 100px;
+    height: 100px;
+    background: none;
+    margin: auto;
+    margin-top:60px;
+    cursor: pointer;
+    color:#7474fc ;
+    margin-left: auto;
+}
+.go-top-botton .fas{
+    font-size: 50px;
+}
+
+

@@ -1,0 +1,248 @@
+body{
+    background-color:#1a1818;
+    flex-basis: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+.container{
+    height: 98vh;
+    width: 100%; 
+    display: flex;
+    
+}
+
+.container-1{
+    width: 60%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border:1px solid white ;
+    
+}
+.container-1_1{
+    display: flex;
+    width: 90%;
+    background-color: white;
+    height: 10%;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.container-1_2{
+    height: 80%;
+    width: 90%;
+    margin-bottom: 18px; 
+    border-radius: 3px;
+    display: flex;
+}
+.contenedor-img{
+    width: 50%;
+}
+.contenedor-img > img{
+    width: 100%;
+    margin-top: 60px;
+}
+.container-1_2_1{
+    width: 50%;
+    text-align:center;
+    margin-top: 30px;
+}
+.container-1_2_1 > h1{
+    margin-bottom: 50px;
+}
+
+
+.container-1_2_1 > p{
+    text-align:justify;
+}
+
+.container-1_1 > ul {
+    display: flex;
+    flex-direction: row;    
+    animation-name: redes;
+    position: relative;
+    animation-duration: 8s;
+    animation-delay: 0s;
+}
+@keyframes redes {
+    0%{margin-top: 4900px;}
+    
+}
+
+.container-1_1 > ul > li{
+    margin: 50px;    
+    list-style:none;
+}
+.container-1_1 > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+.container-2{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-2_2{
+    border:1px solid white;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    margin-right: 10px;
+    color: white;
+    animation-name:registro;
+    animation-duration: 1s;
+    animation-delay:1.7s;
+    animation-timing-function: linear;
+}
+@keyframes registro {
+    0%{margin-right: 10px;}
+    
+    50%{margin-right:40px;}
+    
+    100%{margin-right:10px;}
+
+}
+.img-logo{
+    width: 100%;
+    height: 20%;
+    margin-top: 20px;
+}
+.registro > form{
+   
+    width: 100%;
+    height: 60%;
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mesajes{
+    width: 100%;
+    height:20% ;
+}
+
+.img-logo >.contain-logo{
+    width: 90px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-logo >.contain-logo > img{
+    width: 90px;
+    height: 90px;
+    margin-top: 6px;
+}
+.mesajes > .boton{
+   height: 35px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.mesajes > ul{
+    display: flex;
+    justify-content: center;
+}
+.mesajes > ul > li{
+    margin: 15px;
+    list-style: none;
+}
+.mesajes > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+.mesajes > ul > li > a:hover{
+    border-bottom:1px solid white ;
+}
+
+.registro > form > label:first-child{
+    margin-top: 120px;
+    margin-bottom: 15px;
+}
+.registro > form > label{
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.registro > form > input{
+    background: none;
+    border-radius: 3px;
+    width: 230px;
+    color: white;
+}
+.registro form  .input-1{
+   
+    width: 190px;
+    color: white;
+}
+
+.container-1_1 > ul > li > a > .icon{
+   font-size: 60px; 
+}
+.container-1_1 > ul > li > a > .icon:hover{
+    color: #3a3aff;
+ }
+ .container-1_1 > ul > li > a > .insta:hover{
+    color:#8f3182;
+ }
+
+ .container-1_1 > ul > li > a > .what:hover{
+    color:#4bc44b;
+    background-color: white;
+ }
+ 
+ /* mensaje comprobacion o error*/
+
+ .red{
+     color: red;
+     text-align: center;
+ }
+ .green{
+     color: #3edd3e;
+     text-align: center;
+ }
+
+ /*ventana Registrando Usuario*/
+
+ 
+
+ .contain-registro{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.container-2__2{
+    border:1px solid white;
+    width: 32%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: 57px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.ocultar{
+    display: none;
+}
+
+.formulario-2{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,143 @@
+body{
+    background-color: gray;
+    display: flex;
+    height: 100vh;
+    
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    flex-basis: 100%;
+}
+.contenedor-1{
+    height: 60vh;
+    width: 35%;
+    background-color: #cdfcff;
+ 
+ }
+ .contenedor-2{
+     height: 80vh;
+     width: 35%;
+     background-color: blue;
+   
+ }
+ 
+ .contenedor-3{
+     height: 60vh;
+     width: 30%;
+     background-color: rgb(89, 155, 160);
+ }
+#cuadro{
+    background-color: hotpink;
+    width: 100px;
+    height: 100px;
+    animation-name: cuadro;
+    animation-duration: 4s;
+    position: relative;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+    
+}
+
+@keyframes cuadro {
+    0%{background:hotpink ;left: 0; right: 0;}
+    20%{background: indigo;}
+    40%{background:lightseagreen ;left: 200px;top: 0;}
+    60%{background: maroon; left: 200px; top: 200px;}
+    70%{background: mediumblue;left: 0; top: 200px;}
+    100%{background: mediumslateblue;left: 0; top: 0;}
+}
+
+.cuadros{
+    background-color:black;
+    width: 90%;
+    height: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:25px;
+    overflow: hidden;
+    
+    
+}
+
+#cuadrito {
+    width: 50px;
+    height: 50px;
+    background-color: #860086;
+    animation-name: cuadrito;
+    animation-duration: 2s;
+    position: relative;
+    margin-top: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;   
+}
+
+@keyframes cuadrito {
+    0%{background:hotpink ;bottom: 0%; transform: rotate(0deg);}
+    20%{background: indigo; bottom: 15%;transform: rotate(50deg);}
+    40%{background:lightseagreen ;bottom: 30%;transform: rotate(100deg);}
+    60%{background: maroon; bottom: 45%; transform: rotate(180deg);}
+    70%{background: mediumblue; bottom:50%;transform: rotate(250deg);}
+    100%{background: mediumslateblue; bottom: 100%;transform: rotate(380deg);}
+}
+
+.titulo{
+    width: 300px;
+    display: flex;
+}
+.contenedor-3 > .texto > h1{
+  text-align: center;  
+  font-family: cursive;
+}
+
+
+.contenedor-3 > .texto > h1 > #ta1{
+    color: chocolate;
+    animation-name:ta1 ;
+    animation-duration:4s;  
+    animation-iteration-count: infinite;
+}
+
+@keyframes ta1 {
+    0%{ background-color: coral;}
+    20%{ background-color: crimson;}
+    40%{ background-color: darkblue;}
+    60%{ background-color: darkgreen;}
+    70%{ background-color:darkslateblue;}
+    100%{ background-color: deeppink;}
+}  
+.contenedor-3 > .texto > h1 > #ta2{
+    color: chocolate;
+    animation-name:ta2 ;
+    animation-duration:4s;  
+    animation-iteration-count: infinite;
+}
+@keyframes ta2 {
+    0%{ background-color: coral;}
+    20%{ background-color: #3f14dc;}
+    40%{ background-color: #6f008b;}
+    60%{ background-color: #b91818;}
+    70%{ background-color:#165520;}
+    100%{ background-color: #490e2e;}
+}  
+
+#ta3{
+    animation-name: ta3;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    position: relative;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes ta3 {
+    0%{top:0 ; }
+    20%{top: 20px;}
+    40%{ top:40px ;}
+    60%{top: 60px ;}
+    70%{top:80px ;}
+    100%{top:100px ;}
+}
